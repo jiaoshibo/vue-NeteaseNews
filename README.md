@@ -33,7 +33,7 @@
 
 ## 所需技术
 
-vue + vuex + vue-router + webpack + es6 + sass + flex + GIT
+vue + vuex + vue-router + webpack + es6 + sass + flex 
 
 ## 部分截图
 
