@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>{{ msg }}{{$store.state.num}}</h1>
     <h2>Essential Links</h2>
     <ul>
       <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
@@ -17,11 +17,12 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
-    <div class="box"><p>{{$store.state.message}}</p></div>
   </div>
 </template>
 
 <script>
+
+
 export default {
   name: 'hello',
   data () {
@@ -33,8 +34,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-$height:100px;
+<style scoped>
 h1, h2 {
   font-weight: normal;
 }
@@ -51,15 +51,5 @@ li {
 
 a {
   color: #42b983;
-}
-.box{
-  width: 200px;
-  height: $height;
-  background: #000;
-  p{
-    color: #fff;
-    text-align: center;
-    line-height: $height;
-  }
 }
 </style>
