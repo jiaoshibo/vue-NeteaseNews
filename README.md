@@ -35,6 +35,20 @@
 
 vue + vuex + vue-router + webpack + es6 + sass + flex + git
 
+## UI框架
+
+ 以 Muse-UI 为主框架，以 Mint-UI 作为补充
+
+1. http://www.muse-ui.org/#/index
+1. http://mint-ui.github.io/#!/zh-cn 
+
+备用UI库
+
+1. http://framework7.cn/
+1. https://onsen.io/
+1. https://vux.li/#/ 
+1. https://github.com/youzan/vant
+
 ## 部分截图
 
 <img src="https://raw.githubusercontent.com/jiaoshibo/images/master/screenshots/01.PNG" width="200px" height="336px"/> <img src="https://raw.githubusercontent.com/jiaoshibo/images/master/screenshots/02.PNG" width="200px" height="336px"/> <img src="https://raw.githubusercontent.com/jiaoshibo/images/master/screenshots/03.jpg" width="200px" height="336px"/>
