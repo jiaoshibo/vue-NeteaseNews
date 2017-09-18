@@ -1,9 +1,8 @@
 
 <template>
-     <mu-appbar>
-       <mu-flat-button label="保定" class="demo-flat-button" icon="android" primary/>
-     <mu-text-field icon="search" class="appbar-search-field" hintText="搜索" fullWidth/>
-     <mu-flat-button color="white" label="flat Button" slot="right"/>
+     <mu-appbar title="网易新闻">
+       <mu-flat-button class="demo-flat-button" icon="video_library" slot="right"/>
+      <mu-flat-button color="white" slot="right" icon="search" class="search"/>
      </mu-appbar>
 </template>
 <<script>
@@ -29,5 +28,8 @@ export default {
   .mu-text-field-focus-line {
     background-color: #FFF;
   }
+}
+.search{
+  margin-left:0.5rem;
 }
 </style>

@@ -1,19 +1,25 @@
 <template>
-  <div>
+  <div class="a">
     <tit></tit>
-    <swipe></swipe>
+    <neirong></neirong>
   </div>
 </template>
 
 <script>
   import Tit from './home/Nav'
-  import Swipe from './home/Swipe'
+  import Neirong from './home/Neirong'
   export default {
     name:'home',
     components:{
         Tit,
-        Swipe
+        Neirong
     }
   }
 </script>
+<style>
+.a{
+  margin-bottom:0.65rem;
+}
+</style>
+
 
