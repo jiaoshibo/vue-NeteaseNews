@@ -7,9 +7,15 @@ import store from './vuex'
 import MuseUI from 'muse-ui'
 import 'muse-ui/dist/muse-ui.css'
 import 'muse-ui/dist/theme-carbon.css'
-// import Framework7 from 'framework7'
+
 Vue.use(MuseUI)
-// Vue.use(Framework7)
+
+// mint-ui组件
+
+import { Swipe, SwipeItem } from 'mint-ui';
+
+Vue.component(Swipe.name, Swipe);
+Vue.component(SwipeItem.name, SwipeItem);
 
 Vue.config.productionTip = false
 
