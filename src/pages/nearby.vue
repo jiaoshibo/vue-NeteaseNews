@@ -1,11 +1,17 @@
 <template>
   <div>
-      nearbay
+      <news></news>
   </div>
 </template>
+<script>
+import News from './news/News'
+export default {
+  name:'impNews',
+  components:{
+      News
+  }
+}
+</script>
 
 <style>
-    div{
-        font-size: 21px;
-    }
 </style>
