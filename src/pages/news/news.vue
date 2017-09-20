@@ -16,43 +16,53 @@
             </div>
         </div>
         <div class="newsList">
-            <div class="list">
-                <div class="list-in">
-                    <p>
-                        新闻
-                    </p>
-                    <img src="../home/img/01.png">
+            <mu-list v-for="(item,i) in list" :key="i">
+                
+                <div class="list">
+                    <div class="list-in">
+                        <p>
+                            新闻{{i}}
+                        </p>
+                        <img src="../home/img/01.png">
+                    </div>
                 </div>
-            </div>
-            <div class="list">
-                <div class="list-in">
-                    <p>
-                        新闻
-                    </p>
-                    <img src="../home/img/01.png">
-                </div>
-            </div>
-            <div class="list">
-                <div class="list-in">
-                    <p>
-                        新闻
-                    </p>
-                    <img src="../home/img/01.png">
-                </div>
-            </div>
-            <div class="list">
-                <div class="list-in">
-                    <p>
-                        新闻
-                    </p>
-                    <img src="../home/img/01.png">
-                </div>
-            </div>
+            </mu-list>
+            <mu-infinite-scroll :scroller="scroller" :loading="loading" @load="loadMore"/>
+            
         </div>
     </div>
 </template>
 
 <script>
+export default{
+data () {
+    const list = []
+    for (let i = 0; i < 10; i++) {
+      list.push('item' + (i + 1))
+    }
+    return {
+      list,
+      num: 5,
+      loading: false,
+      scroller: null
+    }
+  },
+  mounted () {
+    this.scroller = this.$el
+  },
+  methods: {
+    loadMore () {
+      this.loading = true
+      setTimeout(() => {
+        for (let i = this.num; i < this.num + 5; i++) {
+          this.list.push('item' + (i + 1))
+        }
+        this.num += 10
+        this.loading = false
+      }, 2000)
+    }
+  }
+}
 
 </script>
 
