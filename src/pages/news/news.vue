@@ -21,7 +21,7 @@
                 <div class="list">
                     <div class="list-in">
                         <p>
-                            新闻{{i}}
+                        {{item.news}}
                         </p>
                         <img src="../home/img/01.png">
                     </div>
@@ -37,32 +37,29 @@
 import Vue from "vue"
 import axios from 'axios';
 Vue.prototype.$axios = axios;
-
+var url="http://localhost:8080/static/data.json"
 export default{
 data () {
-    const list = []
-    for (let i = 0; i < 10; i++) {
-      list.push('item')
-    }
     return {
-      list,
+      list:[],
       num: 5,
       loading: false,
       scroller: null
     }
   },
   mounted () {
-    this.scroller = this.$el
+    this.scroller = this.$el,
+    this.loadMore();
   },
   methods: {
     loadMore () {
       this.loading = true
       setTimeout(() => {
-        for (let i = this.num; i < this.num + 5; i++) {
-          this.list.push('item' + (i + 1))
-        }
-        this.num += 10
-        this.loading = false
+          var that = this;
+        axios.get(url).then((response)=>{
+            that.list=that.list.concat(response.data)
+        })
+        this.loading=false;
       }, 2000)
     }
   }
