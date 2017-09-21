@@ -15,7 +15,7 @@
                 找到阳光与阴影奏出和谐的旋律。我要用一颗敏感赤诚的心迎接每一缕滑过指尖的阳光！
             </mu-card-text>
             <mu-card-actions>
-                <mu-flat-button label="Action 1"/>
+                <mu-flat-button label="Action 1" to="/zero"/>
                 <mu-flat-button label="Action 2"/>
             </mu-card-actions>
         </mu-card>

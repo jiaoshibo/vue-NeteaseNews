@@ -6,6 +6,7 @@ import Goshopping from '@/pages/Goshopping'
 import Order from '@/pages/Order'
 import Mine from '@/pages/Mine'
 import Zhuyao from '@/pages/Main'
+import Zero from '@/pages/home/Zero'
 Vue.use(Router)
 
 export default new Router({
@@ -18,7 +19,7 @@ export default new Router({
         {
           path: '/home',
           name:'home',
-          component:Home
+          component:Home,
         },
         {
           path:'/goshopping',
@@ -41,6 +42,11 @@ export default new Router({
           component:Mine
         }
       ]
+    },
+    {
+      path:'/zero',
+      name:'zero',
+      component:Zero
     }
   ]
 })
