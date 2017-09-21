@@ -16,7 +16,7 @@
     }
   }
 </script>
-<style>
+<style scoped>
 .a{
   margin-bottom:0.65rem;
 }

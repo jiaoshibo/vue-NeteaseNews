@@ -42,7 +42,6 @@ export default{
 data () {
     return {
       list:[],
-      num: 5,
       loading: false,
       scroller: null
     }

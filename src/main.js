@@ -19,7 +19,7 @@ Vue.component(SwipeItem.name, SwipeItem);
 
 //数据请求
 
-
+import 'vant/lib/vant-css/button.css';
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
