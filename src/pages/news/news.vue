@@ -34,11 +34,15 @@
 </template>
 
 <script>
+import Vue from "vue"
+import axios from 'axios';
+Vue.prototype.$axios = axios;
+
 export default{
 data () {
     const list = []
     for (let i = 0; i < 10; i++) {
-      list.push('item' + (i + 1))
+      list.push('item')
     }
     return {
       list,

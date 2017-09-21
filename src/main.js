@@ -18,8 +18,7 @@ Vue.component(Swipe.name, Swipe);
 Vue.component(SwipeItem.name, SwipeItem);
 
 //数据请求
-import axios from 'axios';
-Vue.prototype.$axios = axios;
+
 
 Vue.config.productionTip = false
 
