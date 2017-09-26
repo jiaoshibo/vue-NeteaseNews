@@ -22,14 +22,7 @@
         <van-cell-group>
           <van-cell title="推送设置" is-link></van-cell>
           <van-cell title="栏目插件设置" is-link></van-cell>
-          <van-cell title="仅WI-FI网络下图片">
-            <van-row>
-              <van-col>
-                <van-switch class="some-customized-class" v-model="switchState1"></van-switch>
-                <div class="demo-switch__text">{{ switchState1 ? ' 打开' : '关闭' }}</div>
-              </van-col>
-            </van-row>
-          </van-cell>
+          <van-cell title="仅WI-FI网络下图片"></van-cell>
         </van-cell-group>
       </div>
   </div>
