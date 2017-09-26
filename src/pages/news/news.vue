@@ -66,7 +66,7 @@ data () {
 
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 body{
     background: #f5f5f5;
     margin-bottom: 0.65rem;

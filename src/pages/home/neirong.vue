@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="content">
         <mu-card>
             <mu-card-header title="Myron Avatar" subTitle="sub title">
                 <mu-avatar icon="home" slot="avatar"/>
@@ -25,5 +25,8 @@
 <style scoped>
     .btn{
         display: inline-block;
+    }
+    .content{
+        margin-top: 0.55rem;
     }
 </style>
