@@ -5,7 +5,7 @@
                 要闻
             </p>
         </div>
-        <mu-card>
+        <mu-card class="pic">
             <mu-card-media subTitle="阿尔托蕾娅和莫德雷德" subTitleClass="saber">
                 <img src="../home/img/saber02.jpg" />
             </mu-card-media>
@@ -81,9 +81,17 @@ body{
     text-align: center;
     line-height: 0.5rem;
     font-size: 0.22rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9;
 }
 .yaowen p{
     margin: 0;
+}
+.pic{
+    margin-top: 0.51rem;
 }
 .importantNews{
     height: 0.7rem;
@@ -103,6 +111,7 @@ body{
 .newsList{
     margin-top: 0.1rem;
     background-color: #fff;
+    margin-bottom: 0.65rem;
 }
 .list{
     height: 0.7rem;

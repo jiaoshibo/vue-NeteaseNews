@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="lis">
         <div>
             <van-cell-group>
                 <van-cell title="我的消息" icon="pending-evaluate" value="评论我的跟帖/通知" is-link></van-cell>
@@ -15,7 +15,7 @@
         </div>
         <div class="setting">
             <van-cell-group>
-            <van-cell title="设置" icon="setting" is-link></van-cell>
+            <router-link to="/setting"><van-cell title="设置" icon="setting" is-link></van-cell></router-link>
             </van-cell-group>
         </div>
     </div>
@@ -39,5 +39,8 @@
 }
 .setting{
     margin-top:0.1rem;
+}
+.lis{
+    margin-bottom: 0.65rem;
 }
 </style>

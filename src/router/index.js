@@ -7,6 +7,7 @@ import Order from '@/pages/Order'
 import Mine from '@/pages/Mine'
 import Zhuyao from '@/pages/Main'
 import Zero from '@/pages/home/Zero'
+import Setting from '@/pages/mine/Setting'
 Vue.use(Router)
 
 export default new Router({
@@ -47,6 +48,11 @@ export default new Router({
       path:'/zero',
       name:'zero',
       component:Zero
+    },
+    {
+      path:'/setting',
+      name:'setting',
+      component:Setting
     }
   ]
 })

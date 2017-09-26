@@ -16,10 +16,10 @@
                 <span class="c">0</span><span class="w">收藏</span>
             </mu-flexbox-item>
             <mu-flexbox-item class="flex-demo">
-                <span class="c">0</span><span class="w">收藏</span>
+                <span class="c">14</span><span class="w">历史</span>
             </mu-flexbox-item>
             <mu-flexbox-item class="flex-demo">
-                <span class="c">0</span><span class="w">收藏</span>
+                <span class="c">0</span><span class="w">跟帖</span>
             </mu-flexbox-item>
         </mu-flexbox>
         <mu-divider/>
