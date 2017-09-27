@@ -21,7 +21,7 @@
       <div class="cell0">
         <van-cell-group>
           <van-cell title="夜间模式">
-            <mu-switch/>
+            <mu-switch v-model="theme"/>
           </van-cell>
           <van-cell title="自动设置夜间模式">
             <mu-switch/>
@@ -64,9 +64,10 @@ Vue.component(Switch.name, Switch);
       return {
         switchState1: true,
         switchState2: false,
-        tog:true
+        tog:true,
+        theme:false
       };
-    },
+    }
   }
 </script>
 <style scoped lang="less">
