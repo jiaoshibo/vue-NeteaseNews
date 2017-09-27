@@ -82,7 +82,7 @@ Vue.component(Switch.name, Switch);
     text-align: center;
     line-height: 0.5rem;
     color: #fff;
-    font-size: 0.22rem;
+    font-size: 0.2rem;
     span{
       margin-left: -0.48rem;
     }

@@ -24,6 +24,6 @@ export default {
         line-height: 0.5rem;
         margin: 0;
         color: #fff;
-        font-size: 0.22rem;
+        font-size: 0.2rem;
     }
 </style>

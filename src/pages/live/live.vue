@@ -17,7 +17,7 @@ export default {
     color: #fff;
     text-align: center;
     line-height: 0.5rem;
-    font-size: 0.22rem;
+    font-size: 0.2rem;
     position: fixed;
     top: 0;
     right: 0;
