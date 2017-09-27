@@ -8,6 +8,7 @@ import Mine from '@/pages/Mine'
 import Zhuyao from '@/pages/Main'
 import Zero from '@/pages/home/Zero'
 import Setting from '@/pages/mine/Setting'
+import Msg from '@/pages/mine/Msg'
 Vue.use(Router)
 
 export default new Router({
@@ -53,6 +54,11 @@ export default new Router({
       path:'/setting',
       name:'setting',
       component:Setting
+    },
+    {
+      path:'/msg',
+      name:'msg',
+      component:Msg
     }
   ]
 })
