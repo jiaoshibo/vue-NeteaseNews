@@ -20,9 +20,32 @@
       </div>
       <div class="cell0">
         <van-cell-group>
+          <van-cell title="夜间模式">
+            <mu-switch/>
+          </van-cell>
+          <van-cell title="自动设置夜间模式">
+            <mu-switch/>
+          </van-cell>
+          <van-cell title="离线阅读" is-link></van-cell>
+        </van-cell-group>
+      </div>
+      <div class="cell0">
+        <van-cell-group>
           <van-cell title="推送设置" is-link></van-cell>
           <van-cell title="栏目插件设置" is-link></van-cell>
-          <van-cell title="仅WI-FI网络下图片"></van-cell>
+          <van-cell title="仅WI-FI网络下加载图片">
+            <mu-switch v-model="tog"/>
+          </van-cell>
+          <van-cell title="清理缓存" value="6.1MB"></van-cell>
+          <van-cell title="扫一扫" is-link></van-cell>
+        </van-cell-group>
+      </div>
+      <div class="cell0">
+        <van-cell-group>
+          <van-cell title="意见反馈" is-link></van-cell>
+          <van-cell title="为网易新闻评分" is-link></van-cell>
+          <van-cell title="态度封面" is-link></van-cell>
+          <van-cell title="关于" is-link></van-cell>
         </van-cell-group>
       </div>
   </div>
@@ -40,7 +63,8 @@ Vue.component(Switch.name, Switch);
     data() {
       return {
         switchState1: true,
-        switchState2: false
+        switchState2: false,
+        tog:true
       };
     },
   }
