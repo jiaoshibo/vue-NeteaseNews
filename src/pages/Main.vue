@@ -15,7 +15,7 @@
 
 <script>
 export default {
-    name:'zhuyao',
+  name:'zhuyao',
   data () {
     return {
       bottomNav: 'recents'
