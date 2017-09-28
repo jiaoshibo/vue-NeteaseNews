@@ -5,7 +5,9 @@
                 <router-link to="/msg">
                     <van-cell title="我的消息" icon="pending-evaluate" value="评论我的跟帖/通知" is-link></van-cell>
                 </router-link>
-                <van-cell title="我的关注" icon="like-o" is-link></van-cell>
+                <router-link to="/foucs">
+                    <van-cell title="我的关注" icon="like-o" is-link></van-cell>
+                </router-link>
             </van-cell-group>
         </div>
         <div class="gold">

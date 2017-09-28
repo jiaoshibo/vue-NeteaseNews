@@ -9,6 +9,7 @@ import Zhuyao from '@/pages/Main'
 import Zero from '@/pages/home/Zero'
 import Setting from '@/pages/mine/Setting'
 import Msg from '@/pages/mine/Msg'
+import Foucs from '@/pages/mine/Foucs'
 Vue.use(Router)
 
 export default new Router({
@@ -59,6 +60,11 @@ export default new Router({
       path:'/msg',
       name:'msg',
       component:Msg
+    },
+    {
+      path:'/foucs',
+      name:'foucs',
+      component:Foucs
     }
   ]
 })
